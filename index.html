@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+    <link rel="icon" type="image/x-icon" href="photos/lotto.png">
+    <link rel="stylesheet" href="styles/common_styles.css">
+    <link rel="stylesheet" href="styles/style_index.css">
+    <script src="script/common_script.js" defer></script>
+    <script src="script/script_index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="overlay">
+
+    </div>
+    <div class="main_container">
+        <div id="title_container">
+            ЛОТО
+        </div>
+        <a class="gamemode_button" href="game.html">Грати з ботом</a>
+        <a class="gamemode_button" href="choose_players_amount.html">Грати з друзями</a>
+
+        
+    </div>
+    <div id="info_btn">
+        <img src="photos/info.png" alt="">
+    </div>
+    <div id="info">
+            <h1>Мета гри</h1>
+            <p>Знайти всі числа, які є на вашій картці</p>
+            <h1>Підготовка до гри</h1>
+            <p>
+                <ol>
+                    <li>Кожен гравець отримує картку 3×9 з числами від 1 до 90.</li>
+                    <li>Кожна картка містить 15 випадково розташованих чисел.</li>
+                    <li>Гравці можуть грати:
+                        <ul>
+                            <li>Удома з друзями — усі гравці люди.</li>
+                            <li>Проти бота — один гравець та комп’ютер.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+            <h1>Хід гри</h1>
+            <p>
+                <ol>
+                    <li>Натискайте на кнопку «Взяти бочку».</li>
+                    <li>Генерується випадкове число (бочка).</li>
+                    <li>Якщо це число є на вашій картці — воно закривається (клітинка підсвічується зеленим).</li>
+                    <li>Якщо на вашій картці немає цього числа — нічого не відбувається.</li>
+                </ol>
+            </p>
+            <h1>Пермога</h1>
+            <p>
+                <ul>
+                    <li>Гравець, який першим закриє всі числа на картці, стає переможцем.</li>
+                    <li>Якщо кілька гравців одночасно закрили останні числа — вони всі стають переможцями.</li>
+                </ul>
+            </p>
+            <div id="close_info">Закрити</div>
+        </div>
+    
+    
+</body>
+</html>

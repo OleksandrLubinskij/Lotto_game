@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.amount, .amount:hover, .amount:active, .gamemode_button, .gamemode_button:hover, .gamemode_button:active, #take_barrel, #take_barrel:hover, #take_barrel:active, #buttons a,#buttons a:hover,#buttons a:active, #buttons div, #buttons div:hover, #buttons div:active, #return_to_results, #return_to_results:hover, #return_to_results:active, #close_info, #close_info:hover, #close_info:active{    
+    border: 1px solid aliceblue;
+    text-decoration: none;
+    color: aliceblue;
+    border-bottom: 4px solid rgb(235, 229, 229);
+    border-right: 4px solid rgb(235, 229, 229);
+}
+
+.amount:hover, .gamemode_button:hover, #take_barrel:hover, #buttons a:hover, #buttons div:hover, #return_to_results:hover,#close_info:hover {
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+}
+.amount:active, .gamemode_button:active, #take_barrel:active, #buttons a:active, #buttons div:active, #return_to_results:active, #close_info:active {
+    border: 1px solid aliceblue;
+    border-top: 4px solid rgb(235, 229, 229);
+    border-left: 4px solid rgb(235, 229, 229); 
+}  
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(2, 2, 2, 0.6);
+    z-index: 5;
+    backdrop-filter: blur(5px);
+}
+
+#about_me_link {
+    color: aliceblue;
+    position: absolute;
+    bottom: 2%;
+    left: 85%;
+}

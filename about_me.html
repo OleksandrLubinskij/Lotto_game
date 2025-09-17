@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="icon" type="image/x-icon" href="photos/person.png">
+    <link rel="stylesheet" href="styles/common_styles.css">
+    <link rel="stylesheet" href="styles/style_about_me.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"> </script>
+</head>
+<body>
+    <div class="content">
+        <h1>Про мене</h1>
+        <ul class="personal_data">
+            <li>Любінський Олександр Юрійович</li>
+            <li>вул. Величковського 1/А</li>
+            <li>+380962034299</li>
+            <li>oleksandrlubinskij@gmail.com</li>
+        </ul>
+
+        <img class="my_photo" src="photos/2025-06-20-17-11-11-271.jpg" alt="">
+        
+        <p class="info p1">
+            Мене звати Олександр. Я навчаюся у сфері комп’ютерних наук та цікавлюся
+            програмуванням, веб-розробкою та створенням різних застосунків. 
+            Особливу увагу приділяю мові програмування C++ та роботі з алгоритмами і структурами даних. 
+            Також люблю працювати з базами даних, створювати веб-сайти та пробувати нові технології.
+        </p>
+        <p class="info p2">
+            У вільний час люблю слухати тяжкий метал, дивитися фільми жахів та читати трилери.
+            Це допомагає мені відпочити від навчання і зарядитися новими емоціями.
+            Крім цього, займаюся спортом, адже вважаю, що фізична активність допомагає краще концентруватися
+            на навчанні та проєктах.
+        </p>
+
+        <div class="map">
+            <span>Я живу тут</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.7880296487874!2d23.930274626891272!3d49.876167128546506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ade4306f27b69%3A0x1ecd07e9ddd481b5!2z0LLRg9C7LiDQktC10LvQuNGH0LrQvtCy0YHRjNC60L7Qs9C-!5e1!3m2!1suk!2sua!4v1758033288861!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="video">
+            <span>Моя улюблена пісня</span>
+            <video controls src="video/Slipknot - Psychosocial [OFFICIAL VIDEO] [HD] - Slipknot (480p, h264, youtube).mp4"></video>
+        </div>
+
+        <div class="galery">
+            <span>Моя поїздка у Карпати</span>
+            <div class="owl-carousel owl-theme">
+                <div> <img src="photos/photo1.jpg" alt="Фото 1"> </div>
+                <div> <img src="photos/photo2.jpg" alt="Фото 2"> </div>
+                <div> <img src="photos/photo3.jpg" alt="Фото 3"> </div>
+                <div> <img src="photos/photo4.jpg" alt="Фото 4"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+    <link rel="icon" type="image/x-icon" href="photos/lotto.png">
+    <link rel="stylesheet" href="styles/common_styles.css">
+    <link rel="stylesheet" href="styles/style_game.css">
+    <script src="script/common_script.js" defer></script>
+    <script src="script/script_game.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div id="overlay">
+
+    </div>
+    <div id="main_container">
+        <template id="card_template">
+            <div class="card">
+                <p id="name"></p>
+                <table border="4" cellspacing="0" cellpadding="8">
+                    <tr>
+                        <td class="cell r0c0"></td>
+                        <td class="cell r0c1"></td>
+                        <td class="cell r0c2"></td>
+                        <td class="cell r0c3"></td>
+                        <td class="cell r0c4"></td>
+                        <td class="cell r0c5"></td>
+                        <td class="cell r0c6"></td>
+                        <td class="cell r0c7"></td>
+                        <td class="cell r0c8"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell r1c0"></td>
+                        <td class="cell r1c1"></td>
+                        <td class="cell r1c2"></td>
+                        <td class="cell r1c3"></td>
+                        <td class="cell r1c4"></td>
+                        <td class="cell r1c5"></td>
+                        <td class="cell r1c6"></td>
+                        <td class="cell r1c7"></td>
+                        <td class="cell r1c8"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell r2c0"></td>
+                        <td class="cell r2c1"></td>
+                        <td class="cell r2c2"></td>
+                        <td class="cell r2c3"></td>
+                        <td class="cell r2c4"></td>
+                        <td class="cell r2c5"></td>
+                        <td class="cell r2c6"></td>
+                        <td class="cell r2c7"></td>
+                        <td class="cell r2c8"></td>
+                    </tr>
+                </table>
+            </div>
+        </template>
+        <div id="barrel_info">
+            <div id="num_from_barrel"></div>
+            <div id="message"></div>
+        </div>
+
+        <div id="barrel">
+            <img  src="photos/barrel.png" alt="">
+            <div id="take_barrel">Взяти бочку</div>
+        </div>  
+
+        <div id="return_to_results">
+            Повернутися до результатів
+        </div>
+    </div>
+
+    <div id="winners">
+        <img src="photos/trophy.png" alt="">
+        <div id="winner_msg"></div>
+        <div id="buttons">
+            <a href="index.html">Вернутися на головну</a>
+            <div>Переглянути ігрове поле</div>
+        </div>
+    </div>
+
+</body>
+</html>
